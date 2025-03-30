@@ -1,0 +1,27 @@
+/* Centering the logo */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full-screen height */
+    background-color: black; /* Spotify dark theme */
+  }
+  
+  /* Animation */
+  @keyframes growAnimation {
+    from {
+      transform: scale(0);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .logo {
+    width: 128px; /* Adjust size */
+    height: 128px;
+    animation: growAnimation 1s ease-out;
+  }
+  
